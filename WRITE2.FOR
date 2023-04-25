@@ -1,3 +1,4 @@
+$STORAGE:2
       SUBROUTINE WRITE 2 (IPAGE)
       IMPLICIT INTEGER (O)
       LOGICAL YES
@@ -20,7 +21,7 @@ C
       DATA NCUT,NALL /34,60/
       DATA OUT1,OUT2,OUT3,OUT4 /21,13, 10,16/
 C
-  177 FORMAT ('1'//16X,'Hypoxia Analysis Study',25X,'Page',I3 //
+  177 FORMAT (' '//16X,'Hypoxia Analysis Study',25X,'Page',I3 //
      A   3X,7A4,3X,'Study No.',I8,3X,'Date',I3,2('/',I2) // 3X,18A4 //
      B   A5,'ale   Age -',F4.0,'   Ht -',F5.0,' Cm.',5X,'Wt -',F6.1,
      C   ' Kg.    BSA -',F6.2,' Sq. M.'//
@@ -76,8 +77,9 @@ C
      B   3X,'Tissue PO2',9X,4F10.2,'  mm Hg' /)
   217 FORMAT (3X,'Mixed Expired CO2',F12.2,' mm Hg BTPS',
      A      /,3X,'Fraction expired CO2',3X,F7.3,' %',
-     B      /,3X,'VD/VT ratio ',7X,F12.4,' (Physiologic dead space)',
-     C      /,3X,'Volume of the Valve Box',F7.3,'ml')
+     B      /,3X,'VD/VT Ratio     ',F7.2,' (Physiologic dead space)',
+     C      /,3X,'Valve Box Volume',F7.2,' ml',/,'1')
+
   227 FORMAT (' Would you like only an abbreviated form? (Y/N) '\)
       WRITE (CRTO,227)
       CALL QQQANS (YES)

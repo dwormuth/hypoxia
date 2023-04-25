@@ -1,3 +1,5 @@
+C   ./ i 0
+$STORAGE:2
       FUNCTION ROOT (X,N)
 C
 C     TAKE THE N-TH ROOT OF X

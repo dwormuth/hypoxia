@@ -1,3 +1,5 @@
+C   ./ i 0
+$STORAGE:2
       SUBROUTINE H FILE (LMNO)
 C
 C     WRITE INFO TO DATA BASE FILE
@@ -16,7 +18,9 @@ C
      B 'number.'
      C/' Enter a 0 to over-write the old data. Or,'
      D/' Enter a negative number to do nothing.')
-  147 FORMAT (/' No room in data base.  Max. No. of studies =',I4)
+C   ./ r 19
+  147 FORMAT (/' No more room in study file.  Maximum number of studies'
+     A 'is ',I3,'.')
 C
 C     FOLLOWING FORMATS ARE FOR PATIENT DATA BASE
 C

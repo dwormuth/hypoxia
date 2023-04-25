@@ -1,0 +1,17 @@
+"Minimum descriptors for Hypoxia"
+2: (BP) Barometric pressure
+8: (Aa GRAD) Alveolar-arterial gradient
+13:(O2 CAP) Oxygen carrying capacity of the blood
+15: (VO2) Volume of Oxygen consumed
+16: (Q) Cardiac Output
+23: (HCO3-) Bicarbonate concentration
+25: (f) Respiratory rate
+26: (RMV) Minute volume
+32: (HR) Heart rate
+53: (VCO2) Volume of CO2 released
+67: (VDVT) Physiological Dead Space
+
+**Remember to document the Venous pH stuff, also explain the ATCO and FARHI
+routines.
+**There is a problem with negative square roots again, change the () in
+Chart 25.

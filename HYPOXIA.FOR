@@ -59,7 +59,7 @@ C
   127 FORMAT (' Calculation loop #',I5)
   157 FORMAT (/' Would you like to continue with data for ',7A,'? (Y/N)'
      A   \)
-  167 FORMAT (//////'                 *** HYPOXIA SYSTEM  V85.NOV ***'
+  167 FORMAT (//////,25X,'*** Hypoxia System v86.June ***'
      A            //'                 1. Hypoxia Program'
      B             /'                 2. Produce Hypoxia Worksheet'
      C             /'                 3. List Patients in Data File'
@@ -83,13 +83,15 @@ C     WRITE (*,2)
 C   2 FORMAT (' Enter the name of the DATA file to use: [HYPOX.DAT]: '\)
 C     READ (*,'(A)') FILNAME
 C     IF (FILNAM .EQ. '') FILNAM = 'HYPOX.DAT'
-      OPEN (FILE,FILE='EXERCISE.DAT',STATUS='OLD',ACCESS='DIRECT',
+      OPEN (FILE,FILE='HYPOX.DAT',STATUS='OLD',ACCESS='DIRECT',
      A   FORM='FORMATTED',RECL=80)
       OPEN (FTEMP)
       OPEN (FPLOT,FILE='HYPLT.DAT',STATUS='NEW',ACCESS='SEQUENTIAL',
      A   FORM='FORMATTED')
-      OPEN (FORM,FILE='EXERCISE.OUT',STATUS='NEW',ACCESS='SEQUENTIAL',
+      OPEN (FORM,FILE='HYPOX.OUT',STATUS='NEW',ACCESS='SEQUENTIAL',
      A   FORM='FORMATTED')
+C     Form Feed printer
+      WRITE (IPRN, '(''1'')')
 C
 C     WRITE MAIN MENU AND TAKE ACTION REQUESTED
 C
@@ -168,3 +170,4 @@ C
       CLOSE (FORM,STATUS='KEEP')
       STOP
       END
+

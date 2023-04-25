@@ -1,3 +1,4 @@
+$STORAGE:2
       SUBROUTINE READ (IOPT,LMNO)
       LOGICAL CHANGE,YES,CALCS
       CHARACTER*1 ICRT,ICRT1,IDEV,IFILE,IFILE1
@@ -26,9 +27,8 @@ C
   247 FORMAT (/' Enter data: Parameter number '','' Value.' /
      A   ' Enter ''0,0'' when done.')
   257 FORMAT (/1X,3A4)
-  267 FORMAT (' ++ Invalid parameter number.  Re-enter:')
+  267 FORMAT (' Invalid parameter number.  Please try again.')
   277 FORMAT (//' Non-existant study number:',I8)
-  287 FORMAT (/' List options? (Y/N)')
   297 FORMAT (/'  1: Calculations'
      A        /'  2: Format only (Use existing data to generate report)'
      B        /'  3: Vary parameters >1 step'
@@ -51,8 +51,8 @@ C 397 FORMAT (3(I4,1X,A,F10.3))
   437 FORMAT (/' Enter: ''Parameter #''s to output''.  Maximum of',I3 /
      A   ' Enter 0 when done.'/)
   447 FORMAT (/' Would you like to:'
-     A       //' 1. See a listing of studies in the study File'
-     B        /' 2. Reenter the Study Number'
+     A       //' 1. See a listing of studies in the study file'
+     B        /' 2. Re-enter the study number'
      C        /' 3. Quit this option'
      D       //' Please make a selection: '\)
   457 FORMAT (/' Invalid selection, please try again.')

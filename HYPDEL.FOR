@@ -1,3 +1,5 @@
+C   ./ i 0
+$STORAGE:2
       SUBROUTINE HYPDEL (*)
 C
 C     DELETE A  REQUESTED STUDY FROM HYPOXIA DATA BASE
@@ -9,14 +11,15 @@ C
 C
       DATA MAX /11/, CRTI,CRTO,FILE /0,0,10/
 C
-  107 FORMAT (/' Delete what study? (0 to stop)')
+C   ./ r 12
+  107 FORMAT (/' Delete what study? (0 to stop) '\)
   117 FORMAT (7A4,I8,3I2,44X)
   127 FORMAT (/'  **  Study #',I8,' does not exist **'/)
   137 FORMAT (/' Delete study #',I9,4X,7A4,I6,2('/',I2),'? (Y/N)')
   147 FORMAT (32X,'-999',44X)
   157 FORMAT (80X)
-  167 FORMAT (//' Would you like to see a listing of patients in the dat
-     Aa file. (Y/N)')
+C   ./ r 18 19
+  167 FORMAT (' List subjects in the study file? (Y/N) '\)
 C
    30 WRITE (CRTO,107)
       READ (CRTI,*)  DEL
