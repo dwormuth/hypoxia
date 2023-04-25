@@ -1,3 +1,4 @@
+1986:
 "Minimum descriptors for Hypoxia"
 2: (BP) Barometric pressure
 8: (Aa GRAD) Alveolar-arterial gradient
@@ -14,4 +15,6 @@
 **Remember to document the Venous pH stuff, also explain the ATCO and FARHI
 routines.
 **There is a problem with negative square roots again, change the () in
-Chart 25.
+Chart 25.
+
+4/25/23: New conversion efforts. Applied the UPD files and found the missing QQQANS subroutine of a paper listing. Starting the gfortran conversion.
