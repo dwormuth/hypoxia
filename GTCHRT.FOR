@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE GT CHRT
       LOGICAL DONE(35), FUNC(35), OK,OVER
       INTEGER ORDER (35)
@@ -69,4 +67,3 @@ C
       IF (.NOT. OVER)  GO TO 50
       RETURN
       END
-

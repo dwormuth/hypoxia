@@ -1,0 +1,176 @@
+{
+  "Name":"hypoxia (target)",
+  "Options":{
+    "Type":0,
+    "Architecture":0,
+    "Windows GUI":0,
+    "Target":"target",
+    "Build Dependencies":1,
+    "Compiler Options":{
+      "Link Flags":"",
+      "Fortran Flags":"",
+      "C Flags":""
+    },
+    "Fortran Options":{
+      "Enable OpenMP":"false",
+      "Enable Coarrays":"false",
+      "Default Double for Real":"false",
+      "Initialize Variables to Zero":"false",
+      "Floating Point Exception Trap":0,
+      "Disable Floating Point Exception Warnings":0,
+      "Cray Pointers":"false",
+      "Runtime Diagnostics":"false",
+      "Use C Preprocessor":"false"
+    },
+    "File Options":{
+      "Include Directories":["Default Include Directory"],
+      "Library Directories":["Default Library Directory"],
+      "Module Directory":"modules",
+      "Build Directory":"build"
+    },
+    "Revision":2,
+    "Code Generation Options":{
+      "CPU Specific":"false",
+      "Aggressive Loops":"false",
+      "Link Time Optimization":"false",
+      "Debugging":"true",
+      "Profiling":"false",
+      "Processor":"generic",
+      "Optimization Mode":0
+    },
+    "Linker Options":{
+      "Link LAPACK":0,
+      "Static Linking Mode":7,
+      "Link MPI Library":"false"
+    },
+    "Launch Options":{
+      "Working Directory":"",
+      "Command Line Arguments":"",
+      "Build Before Launch":"true",
+      "Launch Using MPI":"false",
+      "External Console":"false",
+      "Keep Console":"true"
+    },
+    "Build Options":{
+      "Makefile":"Makefile.hypoxia",
+      "Auto Makefile":"true",
+      "Auto Management":"true"
+    }
+  },
+  "Root":{
+    "Name":"+hypoxia (target)",
+    "Files":[{
+        "enabled":"1",
+        "filename":"ATCO.FOR"
+      },{
+        "enabled":"1",
+        "filename":"BLCO2.FOR"
+      },{
+        "enabled":"1",
+        "filename":"BLO2.FOR"
+      },{
+        "enabled":"1",
+        "filename":"CALCK.FOR"
+      },{
+        "enabled":"1",
+        "filename":"CHART.FOR"
+      },{
+        "enabled":"1",
+        "filename":"CHART2.FOR"
+      },{
+        "enabled":"1",
+        "filename":"CHART3.FOR"
+      },{
+        "enabled":"1",
+        "filename":"CHRTOK.FOR"
+      },{
+        "enabled":"1",
+        "filename":"CLEAR.FOR"
+      },{
+        "enabled":"1",
+        "filename":"CREDIT.FOR"
+      },{
+        "enabled":"1",
+        "filename":"CSH.FOR"
+      },{
+        "enabled":"1",
+        "filename":"DEF.FOR"
+      },{
+        "enabled":"1",
+        "filename":"DIFF.FOR"
+      },{
+        "enabled":"1",
+        "filename":"FARHI.FOR"
+      },{
+        "enabled":"1",
+        "filename":"GILBERT.FOR"
+      },{
+        "enabled":"1",
+        "filename":"GTCHRT.FOR"
+      },{
+        "enabled":"1",
+        "filename":"HFILE.FOR"
+      },{
+        "enabled":"1",
+        "filename":"HLIST.FOR"
+      },{
+        "enabled":"1",
+        "filename":"HYPBD.FOR"
+      },{
+        "enabled":"1",
+        "filename":"HYPDAT.FOR"
+      },{
+        "enabled":"1",
+        "filename":"HYPDEL.FOR"
+      },{
+        "enabled":"1",
+        "filename":"HYPLOT.FOR"
+      },{
+        "enabled":"1",
+        "filename":"HYPLST.FOR"
+      },{
+        "enabled":"1",
+        "filename":"HYPOXIA.FOR"
+      },{
+        "enabled":"1",
+        "filename":"HYPXMN.FOR"
+      },{
+        "enabled":"1",
+        "filename":"Makefile.hypoxia"
+      },{
+        "enabled":"1",
+        "filename":"MIT.FOR"
+      },{
+        "enabled":"1",
+        "filename":"O2DISS.FOR"
+      },{
+        "enabled":"1",
+        "filename":"PLTINP.FOR"
+      },{
+        "enabled":"1",
+        "filename":"QQQANS.FOR"
+      },{
+        "enabled":"1",
+        "filename":"READ.FOR"
+      },{
+        "enabled":"1",
+        "filename":"REPORT.FOR"
+      },{
+        "enabled":"1",
+        "filename":"ROOT.FOR"
+      },{
+        "enabled":"1",
+        "filename":"SETNGO.FOR"
+      },{
+        "enabled":"1",
+        "filename":"STAMP.FOR"
+      },{
+        "enabled":"1",
+        "filename":"WRITE.FOR"
+      },{
+        "enabled":"1",
+        "filename":"WRITE2.FOR"
+      }],
+    "Folders":[]
+  }
+}

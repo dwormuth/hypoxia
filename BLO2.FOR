@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE BL O2 (PO2,TEMP,O2 CAP,SO2,DISS O2,COMB O2, O2 TOT,
      A   PH,PCO2,NKNOWN)
 C
@@ -34,4 +32,3 @@ C
 C
  9900 RETURN
       END
-

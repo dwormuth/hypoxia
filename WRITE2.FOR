@@ -1,4 +1,3 @@
-$STORAGE:2
       SUBROUTINE WRITE 2 (IPAGE)
       IMPLICIT INTEGER (O)
       LOGICAL YES
@@ -80,7 +79,7 @@ C
      B      /,3X,'VD/VT Ratio     ',F7.2,' (Physiologic dead space)',
      C      /,3X,'Valve Box Volume',F7.2,' ml',/,'1')
 
-  227 FORMAT (' Would you like only an abbreviated form? (Y/N) '\)
+  227 FORMAT (' Would you like only an abbreviated form? (Y/N) ')
       WRITE (CRTO,227)
       CALL QQQANS (YES)
       IF (YES) CALL GILBERT (*9900,IPAGE)
@@ -150,4 +149,3 @@ C
 C
  9900 RETURN
       END
-

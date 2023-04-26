@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE H FILE (LMNO)
 C
 C     WRITE INFO TO DATA BASE FILE
@@ -91,4 +89,3 @@ C
 C
   900 RETURN
       END
-

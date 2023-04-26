@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE O2 DISS (SO2,PH,PO2,TEMP,PCO2,NKNOWN)
 C
 C     CALCULATE PCT SAT'N OF HBO2 OR OTHER PARAMETERS
@@ -76,4 +74,5 @@ C
      A   (0.024 * (37.0 - TEMP)) - (0.40 * (PH - 7.4))) / 0.06)
 C
  9900 RETURN
-
+      END
+      

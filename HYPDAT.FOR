@@ -24,4 +24,3 @@ C
       CLOSE (FILE,STATUS='KEEP')
       STOP
       END
-

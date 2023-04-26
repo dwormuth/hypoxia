@@ -1,4 +1,3 @@
-$STORAGE:2
       SUBROUTINE CREDIT
       LOGICAL YES
   107 FORMAT (///,20X,'*** HYPOXIA STUDY ***'//
@@ -9,12 +8,11 @@ $STORAGE:2
      E//'   We hope that this program will provide a tool for the study'
      F/' and clinical management of several forms of hypoxia.'
      G///'  Gary Kessler                    David Wormuth'
-     H/'  13 Mallard Drive                7626 Collins Street'
-     I/'  Colchester, VT 05446            Lowville, NY 13367'
-     J/'  802-658-9138                    315-376-7453'
+C    H/'  13 Mallard Drive                7626 Collins Street'
+C    I/'  Colchester, VT 05446            Lowville, NY 13367'
+C    J/'  802-658-9138                    315-376-7453'
      K////' Press ENTER to continue...')
       WRITE (*,107)
       CALL QQQANS (YES)
       RETURN
       END
-

@@ -1,4 +1,3 @@
-$STORAGE:2
       PROGRAM HYPOX
       LOGICAL YES
       CHARACTER*3 IFILE
@@ -55,10 +54,10 @@ C     HYPADDS     CREDIT, PLT INP, HYPDEL, HYPXMN, HYPLST,
 C                 HYPLOT, CLEAR
 C
   107 FORMAT (//' *** Hypoxia Study completed ***'/)
-  117 FORMAT (/' New case study? (Y/N)'\)
+  117 FORMAT (/' New case study? (Y/N)')
   127 FORMAT (' Calculation loop #',I5)
   157 FORMAT (/' Would you like to continue with data for ',7A,'? (Y/N)'
-     A   \)
+     A   /)
   167 FORMAT (//////,25X,'*** Hypoxia System v86.June ***'
      A            //'                 1. Hypoxia Program'
      B             /'                 2. Produce Hypoxia Worksheet'
@@ -66,7 +65,7 @@ C
      D             /'                 4. Delete Study from Data File'
      E             /'                 5. Print graph'
      F             /'                 6. Quit Hypoxia System'
-     G            //'                 Please Make a Selection: '\)
+     G            //'                 Please Make a Selection: ')
   177 FORMAT (/' Invalid selection, please try again')
 C
 C     INITIALIZATION AND FILE OPENING
@@ -74,16 +73,16 @@ C
       CALL HYP BD
       IFILE = 'NUL'
       WRITE (*,1)
-    1 FORMAT (' Would you like to list results on the printer? (Y/N) '\)
+    1 FORMAT (' Would you like to list results on the printer? (Y/N) ')
       CALL QQQANS(YES)
       IF (YES) IFILE = 'PRN'
-      OPEN (IPRN,FILE=IFILE,STATUS='NEW',ACCESS='SEQUENTIAL',
+      OPEN (IPRN,FILE=IFILE,STATUS='UNKNOWN',ACCESS='SEQUENTIAL',
      A   FORM='FORMATTED')
 C     WRITE (*,2)
 C   2 FORMAT (' Enter the name of the DATA file to use: [HYPOX.DAT]: '\)
 C     READ (*,'(A)') FILNAME
 C     IF (FILNAM .EQ. '') FILNAM = 'HYPOX.DAT'
-      OPEN (FILE,FILE='HYPOX.DAT',STATUS='OLD',ACCESS='DIRECT',
+      OPEN (FILE,FILE='HYPOX.DAT',STATUS='UNKNOWN',ACCESS='DIRECT',
      A   FORM='FORMATTED',RECL=80)
       OPEN (FTEMP)
       OPEN (FPLOT,FILE='HYPLT.DAT',STATUS='NEW',ACCESS='SEQUENTIAL',
@@ -170,4 +169,3 @@ C
       CLOSE (FORM,STATUS='KEEP')
       STOP
       END
-

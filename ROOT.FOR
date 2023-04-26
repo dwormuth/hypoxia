@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       FUNCTION ROOT (X,N)
 C
 C     TAKE THE N-TH ROOT OF X
@@ -14,4 +12,3 @@ C
    20 ROOT = R * ABS (X) ** (1.0 / FLOAT(N))
       RETURN
       END
-

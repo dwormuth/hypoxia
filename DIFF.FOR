@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE DIFF
 C
 C     CHART SUBROUTINE FOR HYPOXIA.  CHART 6
@@ -44,4 +42,3 @@ C
   100 CONTINUE
       RETURN
       END
-

@@ -1,4 +1,3 @@
-$STORAGE:2
       SUBROUTINE READ (IOPT,LMNO)
       LOGICAL CHANGE,YES,CALCS
       CHARACTER*1 ICRT,ICRT1,IDEV,IFILE,IFILE1
@@ -17,13 +16,13 @@ C
       DATA TITLE2 /'Expe','rime','ntal', 'Assu','med ','    '/
       DATA MAX /11/
 C
-  117 FORMAT (/' Save data to study file? (Y/N) '\)
+  117 FORMAT (/' Save data to study file? (Y/N) ')
   127 FORMAT (18A4)
   137 FORMAT (3I2)
-  207 FORMAT (/' Enter data from ''CRT'' or retrieve from ''FILE''? '\)
-  217 FORMAT (/' Enter the study name (< 28 Characters): '\)
-  227 FORMAT (/' Enter the study #: (Integer) '\)
-  237 FORMAT (/' Enter study date (MMDDYY): '\)
+  207 FORMAT (/' Enter data from ''CRT'' or retrieve from ''FILE''? ')
+  217 FORMAT (/' Enter the study name (< 28 Characters): ')
+  227 FORMAT (/' Enter the study #: (Integer) ')
+  237 FORMAT (/' Enter study date (MMDDYY): ')
   247 FORMAT (/' Enter data: Parameter number '','' Value.' /
      A   ' Enter ''0,0'' when done.')
   257 FORMAT (/1X,3A4)
@@ -35,34 +34,34 @@ C
      C        /'  4: Plot     '
      D        /'  5: Abort current study and select a new study'
      E        /' 99: Stop')
-  307 FORMAT (/' Enter option: '\)
+  307 FORMAT (/' Enter option: ')
   347 FORMAT (20X,'*** H y p o x i a   S t u d y ***')
   357 FORMAT (/' Restoring: ',7A4,'  #',I9,I4,2('/',I2))
   367 FORMAT (/' Enter report title (< 72 Characters)')
-  387 FORMAT (/' List data? (Y/N) '\)
+  387 FORMAT (/' List data? (Y/N) ')
   397 FORMAT (/' ',I2,1X,A,F7.2,1X,A,2X,I2,1X,A,F7.2,1X,A,2X,I2,1X,A,
-     A F7.2,1X,A,\)
+     A F7.2,1X,A)
 C 397 FORMAT (3(I3,1X,A,F8.3,1X,A))
 C 397 FORMAT (3(I4,1X,A,F10.3))
-  407 FORMAT (' Change any data? (Y/N) '\)
-  417 FORMAT (/' Change study name? (Y/N) '\)
+  407 FORMAT (' Change any data? (Y/N) ')
+  417 FORMAT (/' Change study name? (Y/N) ')
   427 FORMAT (/' Enter: ''Parameter #,Start,End,Step''.  Maximum of',I3
-     A   /' Enter ''0,0,0,0'' When done.'/)
+     A   /' Enter ''0,0,0,0'' When done.')
   437 FORMAT (/' Enter: ''Parameter #''s to output''.  Maximum of',I3 /
-     A   ' Enter 0 when done.'/)
+     A   ' Enter 0 when done.')
   447 FORMAT (/' Would you like to:'
      A       //' 1. See a listing of studies in the study file'
      B        /' 2. Re-enter the study number'
      C        /' 3. Quit this option'
-     D       //' Please make a selection: '\)
+     D       //' Please make a selection: ')
   457 FORMAT (/' Invalid selection, please try again.')
-  467 FORMAT (/' Change study date? (Y/N) '\)
+  467 FORMAT (/' Change study date? (Y/N) ')
   477 FORMAT (/' The data from the file contains calculated values.'
      A ' These values may present'
      B/' a problem if new calculations are going to be done. It is'
      C/' suggested that you have the calculated values removed unless'
      D/' you know that they will not interfere with your current study.'
-     E//' Would you like to retain only original data? (Y/N) '\)
+     E//' Would you like to retain only original data? (Y/N) ')
 C
 C     FOLLOWING FORMATS ARE FOR PATIENT DATA BASE
 C
@@ -260,4 +259,3 @@ C
  9992 IOPT = 5
       GO TO 9900
       END
-

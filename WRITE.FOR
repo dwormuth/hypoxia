@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE WRITE (IPRINT,LMNO)
       LOGICAL YES
       CHARACTER*4 ITAG(4),NAME,TITLE
@@ -20,10 +18,10 @@ C
       DATA ITAG /'In  ','De  ','    ','**  '/
 C
   137 FORMAT (3(I5,1X,A,F10.3))
-  147 FORMAT (/' List data? (Y/N) '\)
+  147 FORMAT (/' List data? (Y/N) ')
   157 FORMAT (/' ',I2,1X,A,F7.2,1X,A,2X,I2,1X,A,F7.2,1X,A,2X,I2,1X,A,
-     A F7.2,1X,A,\)
-  217 FORMAT (' Save data to study file? (Y/N): '\)
+     A F7.2,1X,A)
+  217 FORMAT (' Save data to study file? (Y/N): ')
   237 FORMAT (1H1,15X,'Hypoxia Analysis Study',25X,'Page',I3 //
      A   3X,7A4,3X,'Study No.',I8,3X,'Date',I3,2('/',I2)// 3X,18A4 /)
   247 FORMAT (1X,A2,F4.0,2X,A8,' (',I1,')',10F10.3)
@@ -134,13 +132,15 @@ C
 C
       DO 420  K2 = 1,NUMVAR
       KSUB = NVARY (K2)
-      LIST (K2) = LABEL (KSUB)
+C     TODO: Fix assignment      
+C      LIST (K2) = LABEL (KSUB)
   420 CONTINUE
       K = 0
       DO 430  K2 = KS,KE
       K = K + 1
       KSUB = NOUT (K)
-      LIST (K2) = LABEL (KSUB)
+C     TODO: Fix assignment      
+C      LIST (K2) = LABEL (KSUB)
   430 CONTINUE
 C
       WRITE (FORM,327)  (LIST(K2), K2=1,KE)
@@ -176,4 +176,3 @@ C
 C
  9900 RETURN
       END
-

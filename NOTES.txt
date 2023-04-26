@@ -12,9 +12,10 @@
 53: (VCO2) Volume of CO2 released
 67: (VDVT) Physiological Dead Space
 
-**Remember to document the Venous pH stuff, also explain the ATCO and FARHI
-routines.
-**There is a problem with negative square roots again, change the () in
-Chart 25.
+**Remember to document the Venous pH stuff, also explain the ATCO and FARHI routines.
+**There is a problem with negative square roots again, change the () in Chart 25.
 
 4/25/23: New conversion efforts. Applied the UPD files and found the missing QQQANS subroutine of a paper listing. Starting the gfortran conversion.
+
+Made a new branch: gfortran_mods
+TODO: strip out the $STORAGE instructions

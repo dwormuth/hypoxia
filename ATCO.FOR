@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       REAL FUNCTION ATCO (X)
 C   ./ i 1
 C     This function accepts the PCO2 and returns the CO2 Content
@@ -8,4 +6,3 @@ C     This function accepts the PCO2 and returns the CO2 Content
       ATCO = .1515 + .01361 * X - A * X * X + B * X * X * X - C *X*X*X*X
       RETURN
       END
-

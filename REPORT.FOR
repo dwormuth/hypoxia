@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE REPORT(*,BHOLD,SO2,PH,PO2,TEMP,PCO2,NKNOWN)
       LOGICAL YES
   107 FORMAT (' From subroutine O2DISS. There has been an attempt to'
@@ -15,4 +13,3 @@ $STORAGE:2
       WRITE (*,107) BHOLD,PH,SO2,PO2,TEMP,PCO2,NKNOWN
       RETURN 1
       END
-

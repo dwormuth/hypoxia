@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE SETNGO
 C
 C     REMOVE SOME REDUNDANT CODE FROM THE MAIN.
@@ -16,4 +14,3 @@ C
       CALL GT CHRT
       RETURN
       END
-

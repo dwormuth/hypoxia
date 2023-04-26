@@ -1,4 +1,3 @@
-$STORAGE:2
       SUBROUTINE HYP XMN (*)
 C
 C     GET LIST OF PATIENTS IN DATA BASE FILE
@@ -15,7 +14,7 @@ C
   117 FORMAT (7A4,I8,3I2,44X)
   127 FORMAT (1X,7A4,I13,I7,2('/',I2))
   137 FORMAT (/'  End of Data ',
-     A       //'  Press RETURN to continue ... '\)
+     A       //'  Press RETURN to continue ... ')
 C
       CALL CLEAR
       WRITE (CRTO,107)
@@ -29,4 +28,3 @@ C
       CALL QQQANS (YES)
       RETURN 1
       END
-

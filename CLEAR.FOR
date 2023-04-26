@@ -1,0 +1,7 @@
+      SUBROUTINE CLEAR
+C
+C     LEGACY, CLEARED THE SCREEN
+C
+      RETURN
+      END
+      

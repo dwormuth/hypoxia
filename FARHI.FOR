@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE FARHI
 C   ./ i 1
 C     FARHI guesses a Venous PCO2 based on the calculated Total Venous
@@ -50,4 +48,3 @@ C   ./ r 12 28
 
       RETURN
       END
-

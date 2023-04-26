@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE CHRT OK (OK,NKNOWN,NCHART)
       LOGICAL OK
       CHARACTER*4 NAME
@@ -28,4 +26,3 @@ C
 C
   500 RETURN
       END
-

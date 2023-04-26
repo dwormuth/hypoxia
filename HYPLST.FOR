@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE HYPLST (*)
       LOGICAL OUTPUT(75)
 C   ./ i 2
@@ -24,7 +22,7 @@ C   ./ d 10
      B   4*.FALSE.,4*.TRUE.,2*.FALSE.,.TRUE.,3*.FALSE./
 C   ./ d 14
 
-  107 FORMAT (/' How many copies of the worksheet would you like? '\)
+  107 FORMAT (/' How many copies of the worksheet would you like? ')
 C   ./ r 17
   117 FORMAT (' '/30X,'Hypoxia Worksheet'/' Number',4X,
      A 'Experimental',2X,
@@ -46,4 +44,3 @@ C   ./ i 30
   200 WRITE (IPRN,'(''1'')')
       RETURN 1
       END
-

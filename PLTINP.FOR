@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE PLT INP
 C
 C     HANDLE PLOT INFO INPUT FOR *HREAD*
@@ -15,7 +13,7 @@ C
 C
 C   ./ r 14
   377 FORMAT (/' Enter parameter number of labels to appear on the'
-     A   ' graph.'/'  Enter '0' when done.')
+     A   ' graph.  Enter "0" when done.')
   447 FORMAT (I3,3F10.2)
   457 FORMAT (/' Enter X-axis:  ''Parameter #, Minimum, Maximum'':')
   467 FORMAT (/' Enter Y-axis:  ''Parameter #'':')
@@ -62,4 +60,3 @@ C
 C
       RETURN
       END
-

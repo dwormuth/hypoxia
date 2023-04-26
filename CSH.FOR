@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE CSH (ISUB,NKNOWN)
 C
 C     'CONDENSED' CHART SUBROUTINE FOR HYPOXIA.  CHARTS 1-5, 7-8, & 14
@@ -195,4 +193,3 @@ C If ISUB = 2 then current A PCO2 is PACO2, reset to PaCO2
  9900 IF (ISUB .EQ. 2) A PCO2 = HOLD
       RETURN
       END
-

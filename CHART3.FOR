@@ -1,5 +1,3 @@
-C   ./ i 0
-$STORAGE:2
       SUBROUTINE CHART3 (ISUB,NKNOWN)
       REAL*4 K,KATPS
       CHARACTER*4 NAME
@@ -92,4 +90,3 @@ C
 C
  9900 RETURN
       END
-
